@@ -305,13 +305,3 @@ Ipfinder.Ipvalidation = Ipvalidation;
 Ipfinder.Tokenvalidation = Tokenvalidation;
 
 module.exports = Ipfinder;
-
-/*const a = new Ipfinder("f67f788f8a02a188ec84502e0dff066ed4413a85");*/
-
-/*a.getRanges("Telecom Algeria").then(data => {
-     console.log(data);
-    // console.log(data.status_message);
-    })
-    .catch(console.log);*/
-/*
-console.log(a);*/
