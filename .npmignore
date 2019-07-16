@@ -1,0 +1,11 @@
+/docs
+/examples
+/node_modules
+/test
+
+.editorconfig
+.env
+.eslintrc.json
+.gitattributes
+jsdoc.json
+webpack.config.js

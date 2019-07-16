@@ -1,0 +1,43 @@
+{
+  "name": "ipfinder",
+  "version": "1.0.0",
+  "description": "Official Node client library for IPfinder.",
+  "author": "Mohamed Ben rebia <mohamed@ipfinder.io>",
+  "license": "Apache-2.0",
+  "keywords": [
+    "ipfinder",
+    "IPV4",
+    "IPV6",
+    "ASN"
+  ],
+  "homepage": "https://ipfinder.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipfinder-io/ip-finder-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ipfinder-io/ip-finder-node/issues"
+  },
+  "main": "src/ipfinder.js",
+  "unpkg": "dist/ipfinder.min.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
+    "test": "./node_modules/.bin/mocha \"test/**/*_test.js\" ",
+    "format": "./node_modules/.bin/prettier --write \"src/**/*.js\" \"test/**/*.js\""
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.0.0",
+    "jsdoc": "^3.6.2",
+    "lodash.defaultsdeep": "^4.6.1",
+    "minami": "^1.2.3",
+    "mocha": "^6.1.4",
+    "prettier": "^1.18.2",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6"
+  }
+}
