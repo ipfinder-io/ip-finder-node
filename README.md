@@ -40,8 +40,7 @@ const ipfinder = new Ipfinder(); //  emty token == free
 ipfinder.Authentication().then(data => {
      console.log(data);
     // console.log(data.status_message);
-    })
-    .catch(console.log);
+}).catch(console.log);
 ```
 
 ## Authentication
@@ -54,8 +53,7 @@ const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
 ipfinder.Authentication().then(data => {
      console.log(data);
     // console.log(data.status_message);
-    })
-    .catch(console.log);
+}).catch(console.log);
 
 ```
 
@@ -73,8 +71,7 @@ $ip_address = '1.0.0.0';
 ipfinder.getAddressInfo("1.0.0.0").then(data => {
      console.log(data);
     // console.log(data.status_message);
-    })
-    .catch(console.log);
+}).catch(console.log);
 
 ```
 
@@ -91,8 +88,7 @@ $asn = 'as36947';
 ipfinder.getAsn("as1").then(data => {
      console.log(data);
     // console.log(data.status_message);
-    })
-    .catch(console.log);
+}).catch(console.log);
 ```
 
 ## Firewall
@@ -109,8 +105,7 @@ $asn = 'as36947';
 ipfinder.getFirewall("AS1", 'nginx_deny').then(data => {
      console.log(data);
     // console.log(data.status_message);
-    })
-    .catch(console.log);
+}).catch(console.log);
 
 ```
 
@@ -128,8 +123,7 @@ $org = 'Telecom Algeria';
 ipfinder.getRanges("Telecom Algeria").then(data => {
      console.log(data);
     // console.log(data.status_message);
-    })
-    .catch(console.log);
+}).catch(console.log);
 
 
 ```
@@ -145,8 +139,7 @@ const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
 ipfinder.getStatus().then(data => {
      console.log(data);
     // console.log(data.status_message);
-    })
-    .catch(console.log);
+}).catch(console.log);
 
 ```
 
@@ -160,8 +153,7 @@ const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
 ipfinder.getDomain("google.com").then(data => {
      console.log(data);
     // console.log(data.status_message);
-    })
-    .catch(console.log);
+}).catch(console.log);
 ```
 
 ## Get Domain IP history
@@ -175,8 +167,7 @@ const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
 ipfinder.getDomainHistory("google.com").then(data => {
      console.log(data);
     // console.log(data.status_message);
-    })
-    .catch(console.log);
+}).catch(console.log);
 
 ```
 
@@ -190,8 +181,7 @@ const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
 ipfinder.getDomainBy("DZ").then(data => {
      console.log(data);
     // console.log(data.status_message);
-    })
-    .catch(console.log);
+}).catch(console.log);
 
 ```
 
