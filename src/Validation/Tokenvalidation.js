@@ -32,7 +32,7 @@ class Tokenvalidation {
      * @return {boolean}
      * @throws {ipfinderException}
      */
-    constructor(token) {
+    static validate(token) {
         if (token.length <= 25) {
             throw new error("Invalid IPFINDER API Token");
         }

@@ -34,7 +34,7 @@ class Domainvalidation {
      * @see  for regex domain name.
      * @see {@link https://github.com/ipfinder-io/ip-finder-php/blob/master/src/Validation/Domainvalidation.php/|GitHub}
      */
-    constructor(domain) {
+    static validate(domain) {
         if (
             /^(?!\-)(?:[a-zA-Z\d\-]{0,62}[a-zA-Z\d]\.){1,126}(?!\d+)[a-zA-Z\d]{1,63}$/.test(
                 domain

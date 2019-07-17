@@ -34,7 +34,7 @@ class Asnvalidation {
      * @see  for regex asn number.
      * @see {@link https://github.com/ipfinder-io/ip-finder-php/blob/master/src/Validation/Asnvalidation.php/|GitHub}
      */
-    constructor(asn) {
+    static validate(asn) {
         if (/^(as|AS)(\d+)$/.test(asn) === false) {
             throw new error("Invalid asn number");
         }
