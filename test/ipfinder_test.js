@@ -72,7 +72,7 @@ it("test Get DomainBy", function() {
     assert.deepEqual(api, cons);
 });
 
-it("test Address Exception", function() {
+it("test Address getAddressInfo Exception", function() {
     var ip = "1..0.0.0";
     var ipfinder = new Ipfinder();
     assert.throws(
@@ -84,7 +84,7 @@ it("test Address Exception", function() {
     );
 });
 
-it("test Asn Exception", function() {
+it("test Asn getAsn Exception ", function() {
     var asn = "ip";
     var ipfinder = new Ipfinder();
     assert.throws(
@@ -96,7 +96,7 @@ it("test Asn Exception", function() {
     );
 });
 
-it("test Domain Exception", function() {
+it("test Domain getDomainHistory and getDomain Exception", function() {
     var domain = "fsdf";
     var ipfinder = new Ipfinder();
     assert.throws(
@@ -115,7 +115,7 @@ it("test Domain Exception", function() {
     );
 });
 
-it("test Firewall Format Exception", function() {
+it("test Firewall Format getFirewall Exception", function() {
     var format = "asdasd";
     var ipfinder = new Ipfinder();
     assert.throws(
@@ -127,7 +127,7 @@ it("test Firewall Format Exception", function() {
     );
 });
 
-it("test Firewall By Exception", function() {
+it("test Firewall By getFirewall Exception", function() {
     var country = "DZZ"; // country , ASN
     var ipfinder = new Ipfinder();
     assert.throws(

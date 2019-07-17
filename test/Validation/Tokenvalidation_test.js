@@ -6,17 +6,21 @@ const assert = require("chai").assert;
 
 it("test Asn validation", function() {
     assert.isNotNull(
-        new Tokenvalidation("sadddddddddddddddddddddddddddddddddddddddddddddd")
+        Tokenvalidation.validate(
+            "sadddddddddddddddddddddddddddddddddddddddddddddd"
+        )
     );
-    assert.isObject(
-        new Tokenvalidation("sadddddddddddddddddddddddddddddddddddddddddddddd")
+    assert.isTrue(
+        Tokenvalidation.validate(
+            "sadddddddddddddddddddddddddddddddddddddddddddddd"
+        )
     );
 });
 
 it("test Token Exception", function() {
     assert.throws(
         function() {
-            new Tokenvalidation("free");
+            Tokenvalidation.validate("free");
         },
         error,
         "Invalid IPFINDER API Token"

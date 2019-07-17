@@ -5,14 +5,14 @@ const assertions = require("mocha").it;
 const assert = require("chai").assert;
 
 it("test Domain validation", function() {
-    assert.isNotNull(new Domainvalidation("google.com"));
-    assert.isObject(new Domainvalidation("google.com"));
+    assert.isNotNull(Domainvalidation.validate("google.com"));
+    assert.isTrue(Domainvalidation.validate("google.com"));
 });
 
 it("test Domain Exception", function() {
     assert.throws(
         function() {
-            new Domainvalidation("google.");
+            Domainvalidation.validate("google.");
         },
         error,
         "Invalid Domain name"
