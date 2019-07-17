@@ -1,7 +1,7 @@
 <img src='https://camo.githubusercontent.com/46886c3e689a0d4a3f6c0733d1cab5d9f9a3926d/68747470733a2f2f697066696e6465722e696f2f6173736574732f696d616765732f6c6f676f732f6c6f676f2e706e67' height='60' alt='IP Finder'></a>
-#  IPFinder Node Client Library
+#  IPFinder Node.js Client Library
 
-The official Node client library for the [IPFinder.io](https://ipfinder.io) get details for :
+The official Node.js client library for the [IPFinder.io](https://ipfinder.io) get details for :
 -  IP address details (city, region, country, postal code, latitude and more ..)
 -  ASN details (Organization name, registry,domain,comany_type, and more .. )
 -  Firewall by supported formats details (apache_allow,  nginx_deny, CIDR , and more ..)
@@ -208,9 +208,7 @@ Sample codes under **examples/** folder.
 
 Contact Us With Additional Questions About Our API, if you would like more information about our API that isn’t available in our IP geolocation API developer documentation, simply [contact](https://ipfinder.io/contact) us at any time and we’ll be able to help you find what you need.
 
-License
+## License
 ----
 
-MIT
-----
 [![GitHub license](https://img.shields.io/github/license/ipfinder-io/ip-finder-node.svg)](https://github.com/ipfinder-io/ip-finder-node)
