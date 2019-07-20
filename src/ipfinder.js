@@ -19,7 +19,6 @@
  * @link      https://ipfinder.io
  */
 
-
 const fetch = require("node-fetch");
 
 const error = require("./Exception/ipfinderException");
@@ -156,7 +155,7 @@ class Ipfinder {
         if (token === null) {
             this.token = Ipfinder.DEFAULT_API_TOKEN;
         } else {
-            new Tokenvalidation(token);
+            Tokenvalidation.validate(token);
             this.token = token;
         }
         if (baseUrl === null) {
@@ -223,7 +222,7 @@ class Ipfinder {
      *
      */
     getAddressInfo(path) {
-        new Ipvalidation(path);
+        Ipvalidation.validate(path);
         return this.call(path);
     }
 
@@ -236,7 +235,7 @@ class Ipfinder {
      * API.getAsn("AS1");
      */
     getAsn(path) {
-        new Asnvalidation(path);
+        Asnvalidation.validate(path);
         return this.call(path);
     }
 
@@ -274,7 +273,7 @@ class Ipfinder {
      *
      */
     getFirewall(path, formats) {
-        new Firewallvalidation(path, formats);
+        Firewallvalidation.validate(path, formats);
         return this.call(Ipfinder.FIREWALL_PATH + path, formats);
     }
 
@@ -288,7 +287,7 @@ class Ipfinder {
      *
      */
     getDomain(path) {
-        new Domainvalidation(path);
+        Domainvalidation.validate(path);
         return this.call(Ipfinder.DOMAIN_PATH + path);
     }
 
@@ -302,7 +301,7 @@ class Ipfinder {
      *
      */
     getDomainHistory(path) {
-        new Domainvalidation(path);
+        Domainvalidation.validate(path);
         return this.call(Ipfinder.DOMAIN_H_PATH + path);
     }
 
