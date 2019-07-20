@@ -26,7 +26,7 @@ Installing using npm or yarn:
 ```shell
 npm install ipfinder
 # or
-yarn install ipfinder
+yarn add ipfinder
 ```
 
 ## With `free` TOKEN
