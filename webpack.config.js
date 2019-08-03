@@ -16,7 +16,6 @@ const prod = defaults({}, base, {
   },
   mode: 'production',
   node: {
-    console: true,
     fs: 'empty',
     net: 'empty',
     tls: 'empty'
