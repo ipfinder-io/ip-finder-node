@@ -20,7 +20,8 @@ const prod = defaults({}, base, {
     fs: 'empty',
     net: 'empty',
     tls: 'empty'
-  }
+  },
+  resolve: { alias: { util$: path.resolve(__dirname, 'node_modules/util') } }
 });
 
 const dev = defaults({}, base, {
@@ -29,11 +30,11 @@ const dev = defaults({}, base, {
   },
   mode: 'development',
   node: {
-    console: true,
     fs: 'empty',
     net: 'empty',
     tls: 'empty'
-  }
+  },
+  resolve: { alias: { util$: path.resolve(__dirname, 'node_modules/util') } }
 });
 
 module.exports = [prod, dev];

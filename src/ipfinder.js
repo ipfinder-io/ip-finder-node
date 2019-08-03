@@ -104,7 +104,7 @@ const DOMAIN_BY_PATH = "domainby/";
 /**
  * The Ipfinder API class
  * @class
- * @version 1.0.0
+ * @version 1.0.2
  * @author Mohamed Ben rebia <mohamed@ipfinder.io>
  */
 
@@ -182,17 +182,17 @@ class Ipfinder {
         }
 
         var headers = {
-            //    'X-Authorization' :'$this->token',
-            "Content-type": "application/json",
             "User-Agent": "IPfinder nodejs-client"
         };
 
-        var fields = `{"token": "${this.token}", "format": "${this.format}"}`;
+        //  var fields = `{"token": "${this.token}", "format": "${this.format}"}`; // without JSON.stringify()
+
+        var fields = { token: this.token, format: this.format };
 
         return fetch(this.baseUrl + path, {
             method: "POST",
-            headers: headers,
-            body: fields
+            body: JSON.stringify(fields),
+            headers: headers
         })
             .then(result => result.json())
             .then(result => {

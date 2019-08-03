@@ -1,7 +1,7 @@
 {
   "name": "ipfinder",
-  "version": "1.0.1",
-  "description": "Official Node client library for IPfinder.",
+  "version": "1.0.2",
+  "description": "Official Node.js client library for IPfinder.",
   "author": "Mohamed Ben rebia <mohamed@ipfinder.io>",
   "license": "Apache-2.0",
   "keywords": [
@@ -11,9 +11,6 @@
     "ASN"
   ],
   "homepage": "https://ipfinder.io",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ipfinder-io/ip-finder-node.git"
@@ -30,14 +27,15 @@
     "format": "./node_modules/.bin/prettier --write \"src/**/*.js\" \"test/**/*.js\""
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "util": "^0.10.3"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
     "chai": "^4.2.0",
     "dotenv": "^8.0.0",
-    "jsdoc": "^3.6.2",
+    "jsdoc": "^3.6.3",
     "lodash.defaultsdeep": "^4.6.1",
     "minami": "^1.2.3",
     "mocha": "^6.1.4",

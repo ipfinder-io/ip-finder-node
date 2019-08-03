@@ -64,7 +64,7 @@ const Ipfinder = require('ipfinder');
 const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
 
 // GET Get details for 1.0.0.0
-$ip_address = '1.0.0.0';
+var ip_address = '1.0.0.0';
 
 // lookup IP address information
 
@@ -82,7 +82,7 @@ This API available as part of our Pro and enterprise [https://ipfinder.io/pricin
 const Ipfinder = require('ipfinder');
 const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
 
-$asn = 'as36947';
+var asn = 'as36947';
 
 // lookup Asn information
 ipfinder.getAsn("as1").then(data => {
@@ -99,7 +99,7 @@ formats supported are :  `apache_allow`, `apache_deny`,`nginx_allow`,`nginx_deny
 const Ipfinder = require('ipfinder');
 const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
 
-$asn = 'as36947';
+var asn = 'as36947';
 
 // lookup Asn Firewall information
 ipfinder.getFirewall("AS1", 'nginx_deny').then(data => {
@@ -117,7 +117,7 @@ const Ipfinder = require('ipfinder');
 const ipfinder = new Ipfinder('YOUR_TOKEN_GOES_HERE');
 
 // Organization name
-$org = 'Telecom Algeria';
+var org = 'Telecom Algeria';
 
 // lookup Organization information
 ipfinder.getRanges("Telecom Algeria").then(data => {
