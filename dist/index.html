@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test ipfinder.io</title>
+</head>
+<body>
+
+
+<script type="text/javascript" src="ipfinder.js"></script>
+<!-- <script type="text/javascript" src="ipfinder.min.js"></script> -->
+
+<script type="text/javascript">
+    const ipfinder = new Ipfinder();
+    ipfinder.Authentication().then(data => {
+       console.log(data);
+       alert("Your ip :" + data.ip);
+    // console.log(data.status_message);
+    }).catch(e => 
+    { 
+        console.log('catch: ', e); }
+    );
+</script>
+</body>
+</html>
