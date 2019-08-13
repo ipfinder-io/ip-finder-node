@@ -166,7 +166,7 @@ class Ipfinder {
     }
 
     /**
-     *
+     * call to server
      * @param  {string|null} path     specific path of asn, IP address, ranges, Firewall,Token status
      * @param  {string|null} format   available format `json` `jsonp` `php` `xml`
      * @throws {ipfinderException}
@@ -292,7 +292,7 @@ class Ipfinder {
     }
 
     /**
-     * [getDomainHistory description]
+     * Get Domain History IP
      * @param  {string} path  The API supports passing in a single website name domain name
      * @throws {ipfinderException}
      * @return {Promise<object>}   Domain History data.
