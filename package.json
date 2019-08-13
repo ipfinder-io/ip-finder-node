@@ -1,6 +1,6 @@
 {
   "name": "ipfinder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Official Node.js client library for IPfinder.",
   "author": "Mohamed Ben rebia <mohamed@ipfinder.io>",
   "license": "Apache-2.0",
@@ -27,8 +27,7 @@
     "format": "./node_modules/.bin/prettier --write \"src/**/*.js\" \"test/**/*.js\""
   },
   "dependencies": {
-    "node-fetch": "^2.6.0",
-    "util": "^0.10.3"
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
@@ -40,7 +39,9 @@
     "minami": "^1.2.3",
     "mocha": "^6.1.4",
     "prettier": "^1.18.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-hashed-chunk-id-plugin": "^1.0.3-beta"
   }
 }
