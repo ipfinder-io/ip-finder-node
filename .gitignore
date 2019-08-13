@@ -1,6 +1,5 @@
 .env
 npm-debug.log
-/dist
 /node_modules
 /out
 /docs
