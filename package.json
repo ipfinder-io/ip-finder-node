@@ -27,7 +27,7 @@
     "format": "./node_modules/.bin/prettier --write \"src/**/*.js\" \"test/**/*.js\""
   },
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.7"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
