@@ -41,7 +41,7 @@
     "prettier": "^1.18.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6",
+    "webpack-cli": "^3.3.12",
     "webpack-hashed-chunk-id-plugin": "^1.0.3-beta"
   }
 }
